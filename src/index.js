@@ -8,7 +8,7 @@ class Main extends React.Component {
   render() {
     return (
       <div className="container">
-        <h1 classMame="title">Kwik Cinema Search</h1>
+        <h1 className="title">Kwik Cinema Search</h1>
         <SearchMovies/>
       </div>
     );
