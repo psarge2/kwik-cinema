@@ -1,20 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-export default function searchMovies(){
+export default function SearchMovies(){
+
+    //states- input query, movies
+    const [query, setQuery] = useState('');
+
+    //state for movies and update when appropriate 
+    const [movies, setMovies] = useState([]);
 
     const searchMovies = async (e) => {
         e.preventDefault();
-        console.log('submitting');
-
-        const query = 'Jurassic Park';
-
+       
         const url = `https://api.themoviedb.org/3/search/movie?api_key=b8b3082a03a5dc1c3cc80df3ebd33450&language=en-US&query=${query}&page=1&include_adult=false`;
     
-        
         try{
             const res = await fetch(url);
             const data = await res.json();
-            console.log(data);
+            setMovies(data.results);
         }catch(err){
             console.log(err);
         }
@@ -25,7 +27,9 @@ export default function searchMovies(){
     return (
         <form className="form" onSubmit={searchMovies}>
             <label className='label' htmlFor='query'>Movie Name</label>
-            <input className='input' type="text" name='query' placeholder='name of movie' />
+            <input className='input' type="text" name='query' 
+                placeholder='name of movie'
+                value={query} onChange={(e) => setQuery(e.target.value)} />
             <button className='button' type='submit'>Search</button>
         </form>
     )
