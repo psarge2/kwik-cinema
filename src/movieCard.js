@@ -1,7 +1,7 @@
-import React, from 'react';
+import React from 'react';
 
-export default function MovieCard ({movie}){
-    const {movie} = props.movie;
+export default function MovieCard({movie}){
+    
     return (
         
         <div className="card" key={movie.id} >
