@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kwik-cinema/static/css/main.8eb4cecd.chunk.css",
+    "main.js": "/kwik-cinema/static/js/main.b2eb8082.chunk.js",
+    "main.js.map": "/kwik-cinema/static/js/main.b2eb8082.chunk.js.map",
+    "runtime-main.js": "/kwik-cinema/static/js/runtime-main.e2dc1742.js",
+    "runtime-main.js.map": "/kwik-cinema/static/js/runtime-main.e2dc1742.js.map",
+    "static/js/2.0caf2f03.chunk.js": "/kwik-cinema/static/js/2.0caf2f03.chunk.js",
+    "static/js/2.0caf2f03.chunk.js.map": "/kwik-cinema/static/js/2.0caf2f03.chunk.js.map",
+    "index.html": "/kwik-cinema/index.html",
+    "static/css/main.8eb4cecd.chunk.css.map": "/kwik-cinema/static/css/main.8eb4cecd.chunk.css.map",
+    "static/js/2.0caf2f03.chunk.js.LICENSE.txt": "/kwik-cinema/static/js/2.0caf2f03.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2dc1742.js",
+    "static/js/2.0caf2f03.chunk.js",
+    "static/css/main.8eb4cecd.chunk.css",
+    "static/js/main.b2eb8082.chunk.js"
+  ]
+}
